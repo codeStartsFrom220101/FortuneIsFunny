@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
+$breakpoints: (
+  sm: 414px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1200px,
+);
+
+// 定義重置 CSS 的混合
+@mixin resetCss() {
+
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a,
+  div,
+  span,
+  header,
+  menu,
+  nav,
+  ul,
+  aside,
+  main,
+  article,
+  section,
+  form,
+  input,
+  label,
+  table,
+  tr,
+  td,
+  th,
+  img {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Noto Sans TC", serif;
+  }
+}
+
+// 定義生成響應式類別的混合
+@mixin responsive($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $min-width: map-get($breakpoints, $breakpoint);
+
+    @media (min-width: #{$min-width}) {
+
+      @content;
+    }
+  }
+
+  @else {
+    @warn "無效的斷點: #{$breakpoint}";
+  }
+}
+
+:root {
+  --primary-color: #FFC107;
+  /* 蜂蜜黃 */
+  --secondary-color: #FF9800;
+  /* 次要色 */
+  --background-color: #F5F5F5;
+  /* 背景色 */
+  --gray: #333333;
+
+  --lightGray: #D9D9D9;
+  /* 文字色 */
+  --link-color: #1E88E5;
+  /* 連結色 */
+  --button-color: #4CAF50;
+  /* 按鈕色 */
+  --header-color: #2196F3;
+  /* 頁首色 */
+  --footer-color: #607D8B;
+  /* 頁尾色 */
+  --sign-color: #FFDEC7;
+  /* 籤紙色 */
+  --ivory-white: #FFFFF0;
+
+  --cream-white: #FFF9E6;
+}

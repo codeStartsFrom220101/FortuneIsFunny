@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="命運好好玩，來測試你的愛情運、工作運、個人未來的運勢">
+  <meta name="keywords" content="命運好好玩, 愛情占卜, 工作占卜, 運勢占卜, 網路小遊戲, 占卜遊戲, 水占卜">
+  <meta name="author" content="LieDonDon">
+  <meta property="og:title" content="命運好好玩">
+  <meta property="og:description" content="來測試你的命運吧">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="./js/script.js" defer></script>
+  <title>命運好好玩</title>
+</head>
+
+<body>
+  <main id="container" class="containerBg">
+    <header>
+      <nav>
+        <ul class="menu">
+          <li><a href="../index.html"><i class="fa-solid fa-house"></i></a></i></li>
+          <li><a href="#"><i class="fa-solid fa-clover"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-briefcase"></i></a></li>
+          <li class="chooseBg"></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="signBlock">
+      <div class="box">
+        <h1 class="chooseSign">運勢</h1>
+        <hr>
+        <div class="selectBtns">
+          <a href="#">今日運勢</a>
+          <a href="#">今年運勢</a>
+          <a href="#">未來運勢</a>
+        </div>
+        <button class="startSign">開始抽籤</button>
+      </div>
+      <div class="signContainer" style="display: none;">
+        <div class="sign">
+          <div class="frame" data-value="fortune">
+            <h3 class="signTitle"></h3>
+            <div class="signLuck">
+            </div>
+            <div class="signature">
+            </div>
+            <div class="returnBtn"><i class="fa-solid fa-rotate-left"></i><span>回到</span><span
+                class="signType">運勢</span></div>
+          </div>
+          <img class="wetEffect" src="../asset/wetEffect.png" alt="wetImg">
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="copyright">
+        Copyright &copy; <span class="year">2025</span> 沈長昱僅供作品集使用。<br>
+        版權所有，未經授權不得轉載、複製或用於任何商業用途。
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>
